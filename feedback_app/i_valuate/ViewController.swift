@@ -33,8 +33,16 @@ class ViewController: UIViewController {
     }
     
     
-    // Compile the body text and open the mail app
+    // Open the mail app
     @IBAction func submitPressed(sender: AnyObject) {
+        
+        // Compile the email body text
+        var email: String = "Hello, here is my feedback for today's class:\n Question 1:\n"
+        email += "\(arrayOfAnswers[0])\n\n"
+        email += "Question 2:\n"
+        email += "\(arrayOfAnswers[1])\n\n"
+        email += "Question 3:\n"
+        email += "\(arrayOfAnswers[2])\n\n"
     }
     
     override func didReceiveMemoryWarning() {
